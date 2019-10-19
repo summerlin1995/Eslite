@@ -1,0 +1,26 @@
+<h1>Products#new</h1>
+<p>Find me in app/views/products/new.html.erb</p>
+
+
+<form action="/products" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="name">Name: </label>
+  <input type="text" name="product[name]" id="name">
+
+  <label for="SKU">SKU: </label>
+  <input type="text" name="product[SKU]" id="SKU">
+
+  <label for="price">Price: </label>
+  <input type="text" name="product[price]" id="price">
+
+  <label for="original_price">Original Price: </label>
+  <input type="text" name="product[original_price]" id="original_price">
+
+  <label for="status">Status: </label>
+  <input type="text" name="product[status]" id="status">
+
+  <label for="published">Published: </label>
+  <input type="boolean" name="product[published]" id="published">
+
+  <input type="submit">
+</form>

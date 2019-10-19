@@ -1,0 +1,21 @@
+<h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+<p>hello</p>
+<p>Now is <%= Time.now %><p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2">
+      <div class="products">
+        <% @products.each do |product| %>
+          <h4><%= product.name %></h4>
+          <p><%= product.SKU %></p>
+          <p><%= product.status %></p>
+          <p><%= product.published %></p>
+          <p><%= product.price %></p>
+          <p><%= product.original_price %></p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
